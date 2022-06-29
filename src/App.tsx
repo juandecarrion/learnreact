@@ -1,10 +1,16 @@
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Container from "react-bootstrap/Container";
+
 import "./styles.css";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox in git</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <Container className="p-3">
+      <Jumbotron>
+        <h1 className="header">
+          Welcome To React-Bootstrap TypeScript Example
+        </h1>
+      </Jumbotron>
+    </Container>
   );
 }
