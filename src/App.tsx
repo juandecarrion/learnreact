@@ -1,16 +1,21 @@
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
 
 import "./styles.css";
 
-export default function App() {
+const App: React.FC = () => {
   return (
-    <Container className="p-3">
-      <Jumbotron>
-        <h1 className="header">
-          Welcome To React-Bootstrap TypeScript Example
-        </h1>
-      </Jumbotron>
-    </Container>
+    <Nav variant="tabs">
+      <Nav.Item>
+        <Nav.Link href="#/day">Day</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="#/week">Week</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="#/month">Month</Nav.Link>
+      </Nav.Item>
+    </Nav>
   );
-}
+};
+
+export default App;
